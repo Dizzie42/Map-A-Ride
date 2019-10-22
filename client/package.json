@@ -1,0 +1,44 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.0",
+    "jwt-decode": "^2.2.0",
+    "leaflet": "^1.5.1",
+    "leaflet-control-geocoder": "^1.9.0",
+    "leaflet-routing-machine": "^3.2.12",
+    "react": "^16.9.0",
+    "react-contenteditable": "^3.3.2",
+    "react-dom": "^16.9.0",
+    "react-notify-toast": "^0.5.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.1.1",
+    "react-spinners": "^0.6.1",
+    "styled-components": "^4.3.2",
+    "styled-icons": "^8.4.2",
+    "use-position": "0.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:8888"
+}

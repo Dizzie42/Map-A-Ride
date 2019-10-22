@@ -1,0 +1,115 @@
+/* leaflet control declarations */
+.leaflet-routing-alt {
+  display: none;
+}
+/* control container */
+.leaflet-top.leaflet-right {
+  bottom: 0;
+  left: 0;
+  margin: 7px;
+}
+.leaflet-routing-container.leaflet-bar.leaflet-control {
+  position: absolute;
+  bottom: 0;
+  border: none;
+}
+/* geocoder */
+/* geocoder input */
+.leaflet-routing-geocoder input {
+  font-size: 12.5px;
+  line-height: 22px;
+  font-weight: 500;
+  width: 210px;
+  padding: 0 25px 0px 7px;
+  transition: 0.2s all cubic-bezier(0.4, 0, 0.2, 1);
+  color: #131e41;
+  font-family: "Archivo", sans-serif;
+  margin: 0;
+  height: 35px;
+  border-radius: 2px;
+  background: rgba(252, 252, 255, 0.6);
+  border: 1.8px solid;
+  border-color: rgba(19, 30, 65, 0.6);
+  margin: 0.5px 0px;
+}
+.leaflet-routing-geocoder > input:focus {
+  border-color: #1c01ff;
+  background: rgba(252, 252, 255, 1);
+  outline: none;
+}
+.leaflet-routing-geocoder > input:hover {
+  background: rgba(252, 252, 255, 1);
+}
+/* input container */
+.leaflet-routing-geocoder {
+  position: relative;
+}
+/* remove waypoint btn */
+.leaflet-routing-remove-waypoint {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  cursor: pointer;
+}
+.leaflet-routing-remove-waypoint::after {
+  content: "\002716";
+  color: rgba(183, 184, 201, 1);
+}
+/* btns */
+.add-waypoint-btn,
+.leaflet-routing-reverse-waypoints {
+  border: none;
+  background: rgba(252, 252, 255, 0.6);
+  outline: none;
+  cursor: pointer;
+  color: rgba(19, 30, 65, 1);
+  font-size: 17px;
+  border-radius: 2px;
+  margin: 2px;
+  float: left;
+  min-width: 24px;
+  min-height: 24px;
+}
+.add-waypoint-btn:hover,
+.leaflet-routing-reverse-waypoints:hover {
+  background-color: #cdcee4;
+  transition: all 0.2s ease;
+}
+/* add waypoint btn */
+.add-waypoint-btn::after {
+  content: "\002b";
+}
+/* reverse waypoints btn */
+.leaflet-routing-reverse-waypoints::after {
+  content: "\0021c5";
+}
+/* results message */
+.leaflet-routing-geocoder-result {
+  display: none;
+  /* position: absolute;
+  z-index: 2000;
+  background: #fff;
+  border: 1.8px solid;
+  border-color: rgba(19, 30, 65, 0.6);
+  width: 350px !important;
+  top: 50vh !important;
+  right: 50vw !important;
+  transition: all 0.2s ease;
+  border-radius: 2px; */
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .leaflet-routing-container.leaflet-bar.leaflet-control {
+    margin-bottom: 15px;
+  }
+  .leaflet-control-attribution.leaflet-control {
+    /* display: none; */
+    font-size: 9.5px;
+  }
+  .add-waypoint-btn,
+  .leaflet-routing-reverse-waypoints {
+    min-width: 26px;
+    min-height: 26px;
+    font-size: 15px;
+  }
+}
